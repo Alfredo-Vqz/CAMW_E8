@@ -1,7 +1,7 @@
 function Example() {
     return (
         <h1>
-            hola mundo
+            hola mundo from example 
         </h1>
     );
 }
