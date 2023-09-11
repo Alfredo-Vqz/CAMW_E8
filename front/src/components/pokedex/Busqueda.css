@@ -1,6 +1,6 @@
 
 .Button{
-    color:white!important;
+    color:#000!important;
     font-size: 30px!important;
 }
 
@@ -13,3 +13,24 @@
     border-width: 2px;
     border:2px solid black;
 }
+
+/* .botoes { display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; justify-content: center; align-items: center;  }
+.botoes button { flex: 1 0 auto; width: 100%; max-width: calc(100% / 3); } */
+
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr)); /* Crea columnas del mismo tamaño */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-items: center;
+  }
+  .botoes button {
+    width: 100%;
+    max-width: calc(100% / 3);
+  }
+  .botoes button:last-child {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }

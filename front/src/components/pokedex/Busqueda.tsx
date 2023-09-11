@@ -20,8 +20,7 @@ function Busqueda(){
                     <h2>{busqueda}</h2>
                 </div>
             </div>
-            <div>
-            <Button className="Button" onClick={()=>addToBusqueda("0")}>0</Button>
+            <div className='botoes'>
             <Button className="Button" onClick={()=>addToBusqueda("1")}>1</Button>
             <Button className="Button" onClick={()=>addToBusqueda("2")}>2</Button>
             <Button className="Button" onClick={()=>addToBusqueda("3")}>3</Button>
@@ -31,6 +30,8 @@ function Busqueda(){
             <Button className="Button" onClick={()=>addToBusqueda("7")}>7</Button>
             <Button className="Button" onClick={()=>addToBusqueda("8")}>8</Button>
             <Button className="Button" onClick={()=>addToBusqueda("9")}>9</Button>
+            <Button className="Button" onClick={()=>addToBusqueda("")}></Button>
+            <Button className="Button" onClick={()=>addToBusqueda("0")}>0</Button>
             </div>
             <div>
                 <Button variant="outlined" className="Button">Buscar</Button>
