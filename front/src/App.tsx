@@ -3,11 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Example from './components/Example';
 import Pokedex from './components/Pokedex';
+import Zelda from './components/Zelda';
 
 function App() {
   return (
     <div className="App">
       <Pokedex></Pokedex>
+        <Example></Example> 
+        <Zelda></Zelda>
     </div>
   );
 }
