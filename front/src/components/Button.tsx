@@ -1,13 +1,14 @@
 import "./Button.css"
+import Button from '@mui/material/Button';
 
 interface ButtonProps{
     title:string;
     onPress:()=>void;
 }
 
-function Button(props:ButtonProps){
+function ButtonCustom(props:ButtonProps){
     return (
-        <button onClick={props.onPress} className="Button">{props.title}</button>
+        <Button variant="contained">Contained</Button>
     )
 }
 

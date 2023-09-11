@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Button from '@mui/material/Button';
+import { TextField } from "@mui/material";
 
 function Example(){
     const [contador,setContador]=useState(0);
@@ -24,17 +25,23 @@ function Example(){
     return (
         <div>
             {name==="" &&
-                <h1>Whats your Name?</h1>
+                <div>
+                    <h1>Whats your Name?</h1>
+
+                </div>
             }
             {name!=="" &&
-                <h1>Hello {name}, your count is {contador}</h1>
+                <div>
+                    <h1>Hello {name}, your count is {contador}</h1>
+                </div>
             }
-            <input type="text" onChange={onChangeInput} name="name" value={name} />
+            <TextField id="outlined-basic" label="Outlined" variant="outlined" value={name} onChange={onChangeInput}/>
+
             {name!=="" &&
-                <>
-                    <Button title="Suma" onPress={sumaContador}></Button>
-                    <Button title="Resta" onPress={restarContador}></Button>        
-                </>
+                <div>
+                    <Button variant="contained" onClick={sumaContador}>Sumar</Button>
+                    <Button variant="contained" onClick={restarContador}>Restar</Button>        
+                </div>
 
 
             }
