@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Button.css"
+import Button from "./Button";
 
 function Example(){
     const [contador,setContador]=useState(0);
@@ -7,6 +7,11 @@ function Example(){
     function sumaContador(){
         console.log("Llamando a la funcion sumar")
         setContador(contador+1);
+        console.log("Terminando la funcion sumar")
+    }
+    function restarContador(){
+        console.log("Llamando a la funcion sumar")
+        setContador(contador-1);
         console.log("Terminando la funcion sumar")
     }
 
@@ -26,7 +31,12 @@ function Example(){
             }
             <input type="text" onChange={onChangeInput} name="name" value={name} />
             {name!=="" &&
-                <button onClick={sumaContador} className="Button">Sumar</button>
+                <>
+                    <Button title="Suma" onPress={sumaContador}></Button>
+                    <Button title="Resta" onPress={restarContador}></Button>        
+                </>
+
+
             }
         </div>
     );
