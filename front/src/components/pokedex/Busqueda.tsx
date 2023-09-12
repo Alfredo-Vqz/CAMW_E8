@@ -2,6 +2,8 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import "./Busqueda.css"
+import buscar from './images/buscar.png';
+import tache from './images/tache.png';
 import { useEffect, useState } from 'react';
 
 interface BusquedaProps {
@@ -84,8 +86,10 @@ function Busqueda(props: BusquedaProps) {
                 </Grid>
             </div>
             <div>
-                <Button variant="outlined" className="Button" onClick={handleSearchPokemon}>Buscar</Button>
-                <Button variant="outlined" className="Button" onClick={clearBusqueda}>Borrar</Button>
+                <div className="ButtonContainer">
+                    <Button variant="outlined" className="Button" onClick={handleSearchPokemon}><img src={buscar} alt="Buscar" /></Button>
+                    <Button variant="outlined" className="Button" onClick={clearBusqueda}><img src={tache} alt="Borrar" /></Button>
+                </div>
             </div>
         </div>
     )

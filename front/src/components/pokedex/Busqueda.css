@@ -10,6 +10,10 @@
     transition: background-color 0.3s, transform 0.2s!important;
 }
 
+.ButtonContainer {  
+    margin-top: 20px;
+}
+
 .Button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
@@ -34,3 +38,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+img{
+    max-width: 100px;
+}
