@@ -21,5 +21,5 @@
     padding: 200px; /* Agrega espacio interior para separar el contenido del borde del contenedor */
     background-color: #180adf; /* Fondo blanco para resaltar el contenido */
     border-radius: 10px; /* Agrega esquinas redondeadas al contenedor */
-    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2); /* Agrega una sombra suave al contenedor */
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2); 
 }
