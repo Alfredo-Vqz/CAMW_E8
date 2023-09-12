@@ -1,16 +1,29 @@
-.Pokedex{
-    background-color: lightgrey;
-    min-height: 400px;
-    width:80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:200px;
+/* pokedex.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: white; /* Fondo multicolor usando gradientes */
+    font-family: Arial, sans-serif; /* Cambia la fuente predeterminada */
 }
-.Busqueda{
-    width: 50%;
-    margin: 0 auto;
-    padding: 2rem 0;
+
+.Pokedex {
+    min-height: 300px;
+    width: 80%; /* Cambia el ancho del contenedor principal */
+    margin: 20px auto; /* Aplica un margen cuboide */
+    background: linear-gradient(45deg, #FF5733, #FFBD33, #33FF57, #337CFF); /* Fondo multicolor usando gradientes */
+    border: 1px solid #440a0a; /* Agrega un borde alrededor del contenedor principal */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra con efecto 3D */
+    padding: 20px; /* Agrega espacio interior */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
 }
-.Resultado{
-    width: 50%;
+
+.Busqueda {
+    width: 100%; /* Usa todo el ancho disponible en su contenedor */
+    text-align: center; /* Centra el contenido de la búsqueda */
+    margin-bottom: 20px; /* Agrega espacio inferior */
+}
+
+.Resultado {
+    width: 100%; /* Usa todo el ancho disponible en su contenedor */
+    text-align: center; /* Centra el contenido del resultado */
 }
