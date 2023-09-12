@@ -3,9 +3,11 @@ export type Pokemon={
     name:string,
     abilities:AbilityOuter[],
     moves:MoveOuter[],
-    sprites:Sprites
-    types:TipoOut[]
+    sprites:Sprites,
+    types:TipoOuter[],
+    stats:StatOuter[],
 }
+
 
 export type AbilityOuter={
     ability:AbilityInner
@@ -35,11 +37,18 @@ export type OfficialArtwork={
     front_default:string,
 }
 
-export type TipoOut={
+export type TipoOuter = {
     slot: number
     type: TipoInner
+  };
+  
+export type TipoInner = {
+    name: string
 }
 
-export type TipoInner = {
-    name:string 
+export type StatOuter = {
+    stat: {
+        name:string
+    }
+    base_stat: number
 }
