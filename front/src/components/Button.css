@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* button.css */
 .Button {
     color: white;
@@ -26,3 +27,12 @@
     color: #666; /* Texto gris para botones deshabilitados */
     cursor: not-allowed; /* Cursor no disponible */
 }
+=======
+.Button{
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    padding:10px;
+    
+}
+>>>>>>> Stashed changes

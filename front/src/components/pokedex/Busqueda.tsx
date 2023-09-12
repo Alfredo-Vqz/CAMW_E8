@@ -61,7 +61,11 @@ function Busqueda(props:BusquedaProps){
                 <Grid item xs={columnSize}>
                     <Button className="Button" onClick={()=>addToBusqueda("9")}>9</Button>
                 </Grid> 
+<<<<<<< Updated upstream
                 <Grid item xs={columnSize}>
+=======
+                <Grid item xs={12}>
+>>>>>>> Stashed changes
                     <Button className="Button" onClick={()=>addToBusqueda("0")}>0</Button>
                 </Grid>                                               
             </Grid>

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* pokedex.css */
 body {
     margin: 0;
@@ -26,4 +27,16 @@ body {
 .Resultado {
     width: 100%; /* Usa todo el ancho disponible en su contenedor */
     text-align: center; /* Centra el contenido del resultado */
+=======
+.Pokedex{
+    background-color: red;
+    min-height: 400px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:200px;
+}
+.Busqueda{
+    width: 50%;
+>>>>>>> Stashed changes
 }

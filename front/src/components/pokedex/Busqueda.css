@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* busqueda.css */
 .Button {
     color: #b80af3!important;
@@ -34,3 +35,20 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+=======
+
+.Button{
+    color:white!important;
+    font-size: 30px!important;
+}
+
+.Display{
+    margin:30px;
+    margin-top:20px;
+    padding:15px;
+    background-color:#ccc;
+    border-color:black;
+    border-width: 2px;
+    border:2px solid black;
+}
+>>>>>>> Stashed changes
