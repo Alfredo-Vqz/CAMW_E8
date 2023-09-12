@@ -9,20 +9,17 @@
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Estilo al pasar el ratón */
 .Button:hover {
-    background-color: #0056b3; /* Color de fondo más oscuro */
-    transform: scale(1.05); /* Escala ligeramente al pasar el ratón */
+    background-color: #e30ad8; 
+    transform: scale(1.05); 
 }
 
-/* Estilo al hacer clic */
 .Button:active {
-    background-color: #003d80; /* Color de fondo aún más oscuro */
+    background-color: #003d80; 
 }
 
-/* Estilo deshabilitado */
 .Button:disabled {
-    background-color: #ccc; /* Color de fondo gris para botones deshabilitados */
-    color: #666; /* Texto gris para botones deshabilitados */
-    cursor: not-allowed; /* Cursor no disponible */
+    background-color: #ccc; 
+    color: #666; 
+    cursor: not-allowed; 
 }

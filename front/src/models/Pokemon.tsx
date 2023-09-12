@@ -4,6 +4,7 @@ export type Pokemon={
     abilities:AbilityOuter[],
     moves:MoveOuter[],
     sprites:Sprites
+    types:TipoOut[]
 }
 
 export type AbilityOuter={
@@ -32,4 +33,13 @@ export type Other={
 
 export type OfficialArtwork={
     front_default:string,
+}
+
+export type TipoOut={
+    slot: number
+    type: TipoInner
+}
+
+export type TipoInner = {
+    name:string 
 }

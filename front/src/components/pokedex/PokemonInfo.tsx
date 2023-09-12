@@ -19,15 +19,15 @@ function PokemonInfo(props: PokemonInfoProps) {
             <img className="Image" src={props.pokemon.sprites.other["official-artwork"].front_default} alt={props.pokemon.name} />
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab style={{ color: "white" }} label="Moves" />
+                    <Tab style={{ color: "white" }} label="Type" />
                     <Tab style={{ color: "white" }} label="Abilities" />
                 </Tabs>
             </Box>
             <div className="TabContent">
                 {value === 0 && (
                     <ul>
-                        {props.pokemon.moves.map((move, index) => (
-                            <li key={index}>{move.move.name}</li>
+                        {props.pokemon.types.map((type, index) => (
+                            <li key={index}>{type.type.name}</li>
                         ))}
                     </ul>
                 )}

@@ -2,28 +2,43 @@
 body {
     margin: 0;
     padding: 0;
-    background: white; /* Fondo multicolor usando gradientes */
-    font-family: Arial, sans-serif; /* Cambia la fuente predeterminada */
+    background: white; 
+    font-family: Helvetica, sans-serif; 
 }
 
 .Pokedex {
     min-height: 300px;
-    width: 80%; /* Cambia el ancho del contenedor principal */
-    margin: 20px auto; /* Aplica un margen cuboide */
-    background: linear-gradient(45deg, #FF5733, #FFBD33, #33FF57, #337CFF); /* Fondo multicolor usando gradientes */
-    border: 1px solid #440a0a; /* Agrega un borde alrededor del contenedor principal */
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra con efecto 3D */
-    padding: 20px; /* Agrega espacio interior */
-    border-radius: 10px; /* Agrega esquinas redondeadas */
+    width: 80%; 
+    margin: 20px auto; 
+    background: linear-gradient(45deg, #FF5733, #FFBD33, #33FF57, #337CFF); 
+    border: 1px solid #440a0a; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px; 
+    border-radius: 10px; 
+    position: relative; 
+}
+
+.Pokedex::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; 
+    border-left: 1px solid black; 
+}
+
+.Pokedex-content {
+    position: relative; 
+    z-index: 1; 
 }
 
 .Busqueda {
-    width: 100%; /* Usa todo el ancho disponible en su contenedor */
-    text-align: center; /* Centra el contenido de la búsqueda */
-    margin-bottom: 20px; /* Agrega espacio inferior */
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .Resultado {
-    width: 100%; /* Usa todo el ancho disponible en su contenedor */
-    text-align: center; /* Centra el contenido del resultado */
+    width: 100%; 
+    text-align: center; 
 }

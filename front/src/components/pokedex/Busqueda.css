@@ -2,7 +2,7 @@
 .Button {
     color: #b80af3!important;
     font-size: 24px!important;
-    background-color: #14e7e4df!important; /* Color de fondo azul */
+    background-color: #14e7e4df!important; 
     border: none!important;
     border-radius: 5px!important;
     padding: 10px 20px!important;
@@ -28,8 +28,8 @@
 .Display {
     margin: 20px 0;
     padding: 15px;
-    background-color: #f5f5f5; /* Fondo gris claro */
-    border: 2px solid #333; /* Borde sólido oscuro */
+    background-color: #f5f5f5; 
+    border: 2px solid #333; 
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
