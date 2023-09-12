@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 /* pokemoninfo.css */
 .Name {
     color: #663cd0; /* Cambia el color del nombre a un tono más oscuro para que sea más legible en fondos claros */
@@ -24,11 +23,3 @@
     border-radius: 10px; /* Agrega esquinas redondeadas al contenedor */
     box-shadow: 0 0 10px rgba(0, 170, 255, 0.2); /* Agrega una sombra suave al contenedor */
 }
-=======
-.Name{
-    color: white;
-}
-.Image{
-    width:30%;
-}
->>>>>>> Stashed changes
